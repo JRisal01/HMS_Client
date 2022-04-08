@@ -1,0 +1,43 @@
+.blog__quote {
+    margin-top: 50px;
+    width: 640px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media #{$desktop} {
+        width: 95%;
+        margin: auto;
+    }
+}
+
+.blog__quote-figure {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: normal;
+    color: $cc-primary;
+    font-size: 150px;
+    line-height: 50px;
+    margin: 100px;
+}
+
+.blog__quote-discription {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 62px;
+    text-align: center;
+    letter-spacing: -1.5px;
+    color: $cc-black;
+    margin-top: -80px;
+    @media #{$desktop} {
+        font-size: 42px;
+        line-height: 52px;
+    }
+    @media #{$phone-portrait} {
+        width: 100%;
+        font-size: 32px;
+        line-height: 50px;
+    }
+}

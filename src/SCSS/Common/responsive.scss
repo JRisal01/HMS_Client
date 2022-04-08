@@ -1,0 +1,15 @@
+$container: 660px;
+$medium-width: 1200px;
+$tablet-width: 768px;
+$phone-width: 640px;
+$phone-portrait-width: 567px;
+$header-width: 920px;
+$ipad-width: 1024px;
+
+$desktop: 'screen and (max-width: #{$container})';
+$medium-screen: 'screen and (max-width: #{$medium-width})';
+$ipad: 'screen and (max-width: #{$ipad-width})';
+$tablet: 'screen and (max-width: #{$tablet-width})';
+$phone: 'screen and (max-width: #{$phone-width})';
+$phone-portrait: 'screen and (max-width: #{$phone-portrait-width})';
+$header: 'screen and (max-width: #{$header-width})';

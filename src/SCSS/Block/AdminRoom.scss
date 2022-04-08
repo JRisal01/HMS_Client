@@ -1,0 +1,145 @@
+
+.user-dashboard-details {
+    padding: 50px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 50px;
+}
+
+.user-dashboard-table {
+    width: 90%;
+    box-shadow: 0px 17px 17px rgba(0, 0, 0, 0.25);
+}
+
+.user-dashboard-table table {
+    width: 100%;
+    padding: 5px;
+}
+
+.user-dashboard-table-heading{
+    color: #E4940F;
+    text-align: center;
+    padding: 1px 0;
+    font-family: 'Inter';
+}
+
+.user-dashboard-table-title {
+    background: #E5E5E5;
+}
+
+.user-dashboard-table-title td {
+    font-weight: 700;
+}
+
+.user-dashboard-details td {
+    padding: 8px;
+}
+
+.user-dashboard-table td {
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.user-dashboard-form-container{
+    width: 90%;
+    margin-top: 70px;
+    box-shadow: 0px 4px 17px 15px rgba(0, 0, 0, 0.25);
+}
+
+.user-dashboard-form{
+    width: 80%;
+    margin:auto;
+    padding-bottom: 30px;
+}
+
+.user-dashboard-form-title{
+    color: #E4940F;
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Inter';
+}
+
+.user-dashboard-form-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.user-dashboard-type-price{
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-dashboard-form-wrapper input{
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 0 5px;
+}
+
+.user-dashboard-type-price input{
+    width: 300px;
+}
+
+.user-dashboard-type-price select{
+    width: 300px;
+    height: 40px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.user-dashboard-features-wrapper{
+    font-size: 18px;
+}
+
+.user-dashboard-features{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.user-dashboard-features-option{
+    color: gray;
+    margin: 10px 0;
+}
+
+.user-dashboard-description{
+    margin: 20px 0;
+}
+
+
+
+.user-dashboard-form-image{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.user-dashboard-input-file{
+    padding: 10px 0;
+   display: flex;
+   align-content: center;
+   font-size: 16px
+}
+
+.user-dashboard-btn{
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+.user-dashboard-btn button{
+    height: 50px;
+    width: 35%;
+    font-size: 24px;
+    background: #E4940F;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    
+}

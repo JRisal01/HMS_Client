@@ -1,0 +1,148 @@
+.feature {
+    margin-top: 50px;
+    width: 100%;
+    min-height: 483px;
+}
+
+.feature__wrapper {
+    transform: translate(0px, 87px);
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EDE0CF;
+    @media #{$medium-screen} {
+        height: auto;
+        flex-direction: column;
+        background-color: $cc-white;
+    }
+}
+
+.feature__card {
+    width: 33.33%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    @media #{$medium-screen} {
+        border: 1px solid #C5966E;
+        // padding: 10px 20px 10px 20px;
+        width: auto;
+        margin-top: 20px;
+        background-color: #EDE0CF;
+    }
+}
+
+.feature__card-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.feature__card-no {
+    font-family: 'BerlingskeSerif-Md';
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: -1.2px;
+    color: $cc-black;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    margin-bottom: 2px;
+}
+
+.feature__card-title {
+    font-family: 'BerlingskeSerif-Md';
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: -0.64px;
+    color: $cc-secondary;
+    margin-bottom: 10px;
+}
+
+.feature__card-sub-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: $cc-secondary;
+    margin-bottom: 30px;
+}
+
+.feature__card-line{
+    width: 50px;
+    margin: 0px;
+    margin-bottom: 30px;
+}
+
+.feature__card-discription {
+    width: 320px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: $cc-secondary;
+}
+
+.feature__card:nth-child(2) {
+    height: 528px;
+    width: 540px;
+    border: 1px solid #C5966E;
+    @media #{$phone} {
+        width: 100%;
+    }
+    @media #{$medium-screen} {
+        padding: 0px;
+    }
+
+    .feature__card-wrapper {
+        margin: auto;
+        width: 500px;
+        height: 488px;
+        background: linear-gradient(180deg, #C02942 50%, #9A192E 100%);
+        margin-top: 20px;
+        @media #{$phone} {
+            width: 100%;
+        }
+        
+
+        .feature__card-discription {
+            width: 370px;
+            color: $cc-white;
+            font-size: 20px;
+            line-height: 30px;
+            @media #{$phone} {
+                width: auto;
+            }
+        }
+
+        .feature__card-title {
+            font-size: 50px;
+            line-height: 38px;
+            color: $cc-white;
+            letter-spacing: -1px;
+            margin-bottom: 15px;
+        }
+
+        .feature__card-sub-title {
+            color: $cc-white;
+        }
+
+        .feature__card-no {
+            font-size: 50px;
+            letter-spacing: -2px;
+            margin-bottom: 10px;
+        }
+    }
+}

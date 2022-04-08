@@ -1,0 +1,125 @@
+.main-nav {
+    width: auto;
+    border-bottom: solid 1px ;
+    background-color: rgba(226, 189, 27, 0.2);
+    
+    border-color: rgba(255,255,255, 0.8);
+}
+
+.main-nav__wrapper {
+    padding: 30px 0px;
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @media #{$medium-screen} {
+        width: 100% !important;
+    }
+
+    @media #{$phone} {
+        // padding: 30px 0px;
+        width: 100% !important;
+
+        font-size: 64px;
+    }
+
+    @media #{$tablet} {
+        width: 100%;
+        padding-top: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    @media #{$ipad} {
+        width: 100%;
+        align-items: flex-start;
+    }
+}
+
+.main-nav__logo {
+    @media #{$phone-portrait} {
+        width: 150px;
+    }
+}
+
+.main-nav__menu {
+    min-height: 46px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media #{$ipad} {
+        display: none;
+        flex-direction: column-reverse;
+    }
+}
+
+.main-nav__list {
+    margin: auto;
+    display: flex;
+
+    @media #{$ipad} {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.main-nav__hamburger {
+    display: none;
+
+    @media #{$ipad} {
+        display: block;
+    }
+}
+
+.main-nav__mobile-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+
+    @media #{$ipad} {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.main-nav__button{
+    @media #{$ipad} {
+        display: none;
+    }
+}
+
+.main-nav__items {
+    margin-right: 52px;
+    list-style: none;
+
+    @media #{$tablet} {
+        margin-right: 15px;
+    }
+
+
+    .main-nav__link {
+        text-decoration: none;
+        list-style: none;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: right;
+        letter-spacing: -0.5px;
+        color: $cc-white;
+    }
+}
+
+.main-nav__items:last-child{
+    margin-right: 0px;
+}
+

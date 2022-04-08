@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    font-family: 'Popins';
+}
+
+.header {
+    position: relative;
+    height: 100vh;
+}
+
+.roomDetailBanner {   
+    height: 100vh;
+}
+
+
+.room-detail-title {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 29.99%;
+    font: 600 normal 6rem 'Poppins';
+}
+
+.room-detail-title-logo {
+    position: absolute;
+    bottom: 3.39%;
+    left: 48.15%;
+}
+
+.room-detail-card {
+    width: 81.25%;
+    margin: auto;
+    margin-top: 11em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.room-detail-card-body {
+    width: 27.69%;
+    height: 142px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4.5em;
+    box-shadow: 5px 12px 7px 7px rgba(0, 0, 0, 0.25);
+}
+
+.booking-form {
+    width: 81.25%;
+    margin: auto;
+    box-shadow: 0px -1px 8px 13px rgba(123, 123, 123, 0.25);
+    padding: 50px 60px;
+    box-sizing: border-box;
+
+}
+
+.booking-form-input{
+    width: 100%;
+    height: 60px;
+    padding: 0 0.5em;
+    margin-bottom: 1.5em;
+    cursor: text;
+}
+
+.booking-form-btn{
+    width: 21.45%;
+    height: 60px;
+    background: #E7B023;
+    border: none;
+    border-radius: 10px;
+    font-size: 32px;
+    font-weight: 400;
+    color: white;
+    cursor: pointer;
+}
+
+
+.booking-form-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.room-detail-card-body:hover {
+    transform: scale(1.2);
+}
+
+@media(max-width:1200px) {
+    .booking-form-input {
+        width: 100%;
+    }
+}
+
+@media(max-width:1000px){
+    .room-detail-title{
+        font-size: 50px;
+        left: 32%;
+    }
+}
+
+@media(max-width:600px){
+
+     .room-detail-card{
+         margin-top: 30px;
+     }
+
+     
+
+    .room-detail-title{
+        font-size: 32px;
+        left: 32%;
+        top: 40%;
+    }
+
+    .room-detail-title-logo img{
+        width: 25px;
+    }
+
+    .booking-form-btn{
+        width: 150px;
+    }
+}

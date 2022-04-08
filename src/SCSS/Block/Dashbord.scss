@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    font-family: 'Berlingske Serif';
+}
+
+.admin-dashboard-logo {
+    width: 100%;
+    padding: 20px 70px;
+    box-sizing: border-box;
+    background-color: #E4940F;
+}
+
+
+
+.admin-dashbord-container {
+    display: flex;
+}
+
+.admin-dashboard-nav {
+    width: 18%;
+    background-color: #E4940F;
+}
+
+.admin-dashboard-nav ul {
+    font: 700 normal 20px/3 'Berlingske Serif';
+    letter-spacing: 0.11em;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.admin-dashboard-nav li {
+    list-style: none;
+    padding: 0px 20px;
+}
+
+.admin-dashboard-nav-active{
+    color: #E4940F;
+    background-color: white;
+}
+
+.admin-dashboard-details {
+    padding: 50px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 50px;
+}

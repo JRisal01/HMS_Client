@@ -1,0 +1,73 @@
+.slider-card {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    @media #{$header} {
+        flex-direction: column;
+        row-gap: 30px;
+     }
+     @media #{$ipad} {
+        flex-direction: column;
+        row-gap: 30px;
+     }
+     
+}
+
+.slider-card__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 400px;
+    height: 520px;
+    @media screen and (max-width: 1300px){
+        width: 300px;
+    }
+
+}
+
+.slider-card__item--downhill {
+    background-image: url('https://i.pinimg.com/originals/71/28/3b/71283bb49db55cfee5bb6acd1389c465.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider-card__item--valley {
+    background-image: url('https://i.pinimg.com/originals/71/28/3b/71283bb49db55cfee5bb6acd1389c465.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider-card__item--kathmandu {
+    background-image: url('https://i.pinimg.com/originals/71/28/3b/71283bb49db55cfee5bb6acd1389c465.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.slider-card__title {
+    width: 340px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #FFFFFF;
+    @media screen and (max-width: 1300px){
+        width: 260px;
+    }
+}
+
+.slider-card__line{
+    height: 2px;
+    width: 60px;
+    color: $cc-primary;
+    background-color: $cc-primary;
+    margin-bottom: 30px;
+}
