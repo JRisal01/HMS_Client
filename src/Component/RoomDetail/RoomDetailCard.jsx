@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from 'react'
 
 export default function RoomDetailCard({features}) {
-   console.log(features)
+  //  console.log(features)
   return (
-    <div class="room-detail-card">
+    <div className="room-detail-card">
         {features?.map((items,i)=>(
-            <div class="room-detail-card-body">
+            <div className="room-detail-card-body">
                 {items}
             </div>
         ))}

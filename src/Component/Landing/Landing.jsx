@@ -7,6 +7,8 @@ import Gallery from './Gallery'
 import Contact from './Contact'
 
 export default function Landing() {
+
+
   return (
     <div>
         <Banner />

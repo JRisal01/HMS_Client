@@ -20,7 +20,7 @@ function removeRoom(id){
   
   }
 
-export default function Table() {
+export default function Table({setEdit}) {
 
   
 
@@ -39,14 +39,14 @@ export default function Table() {
     console.log(row)
 
   return (
-    <div class="user-dashboard-table">
+    <div className="user-dashboard-table">
 
             <div>
-                <h1 class="user-dashboard-table-heading">Room Lists</h1>
+                <h1 className="user-dashboard-table-heading">Room Lists</h1>
             </div>
 
             <table cellspacing="0">
-                <tr class="user-dashboard-table-title">
+                <tr className="user-dashboard-table-title">
                     <td>Image</td>
                     <td>Name</td>
                     <td>Room type</td>
@@ -67,7 +67,7 @@ export default function Table() {
                     <td>{items.bedtype}</td>
                     <td>{items.noRoom}</td>
                     <td>{items.rate}</td>
-                    <td><NavLink to="/room" style={{ width: '180px', height: '50px', fontSize: '12px', padding: '0px'}}>Show More</NavLink></td>
+                    <td><img onClick={(e) => setEdit(items)} src="images/edit.svg" /> <img onClick={() => removeRoom(items._id)} src="images/del.svg" className="dashboard-table-action" /></td>
                 </tr>
                 ))}
             </table>
@@ -77,4 +77,4 @@ export default function Table() {
 
 
 
-{/* <img  src="images/edit.svg" /> <img onClick={() => removeRoom(items._id)} src="images/del.svg" class="dashboard-table-action" /> */}
+{/* <img  src="images/edit.svg" /> <img onClick={() => removeRoom(items._id)} src="images/del.svg" className="dashboard-table-action" /> */}

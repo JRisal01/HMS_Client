@@ -15,7 +15,7 @@ const Gallery = () => {
             })  
     }, [url])
 
-    console.log(imamge)
+    // console.log(imamge)
     
     return(
             <>

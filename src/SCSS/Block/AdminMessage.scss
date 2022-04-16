@@ -1,0 +1,80 @@
+
+
+.dashboard-message-logo {
+    width: 100%;
+    padding: 20px 70px;
+    box-sizing: border-box;
+    background-color: #E4940F;
+}
+
+
+
+.user-dashbord-container {
+    display: flex;
+}
+
+.dashboard-message-nav {
+    width: 18%;
+    height: 715px;
+    background-color: #E4940F;
+}
+
+.dashboard-message-nav ul {
+    font: 700 normal 20px/3 'Berlingske Serif';
+    letter-spacing: 0.11em;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.dashboard-message-nav li {
+    list-style: none;
+    padding: 0px 20px;
+}
+
+.dashboard-message-nav-active{
+    color: #E4940F;
+    background-color: white;
+}
+
+.dashboard-message-details {
+    padding: 50px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 50px;
+}
+
+.dashboard-message-table {
+    width: 90%;
+    box-shadow: 0px 17px 17px rgba(0, 0, 0, 0.25);
+    padding-bottom: 10px;
+}
+
+.dashboard-message-table table {
+    width: 100%;
+    padding: 5px;
+}
+
+.dashboard-message-table-heading{
+    color: #E4940F;
+    text-align: center;
+    padding: 1px 0;
+    font-family: 'Inter';
+}
+
+.dashboard-message-table-title {
+    background: #E5E5E5;
+}
+
+.dashboard-message-table-title td {
+    font-weight: 700;
+}
+
+.dashboard-message-details td {
+    padding: 8px;
+}
+
+.dashboard-message-table td {
+    border-bottom: 1px solid #E5E5E5;
+}

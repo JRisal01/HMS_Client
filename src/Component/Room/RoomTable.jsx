@@ -4,7 +4,7 @@ import './table.css';
 
 
 function removeRoom(id){
-  console.log(id)
+  // console.log(id)
 
   try {
     const response =  axios({
@@ -13,7 +13,7 @@ function removeRoom(id){
     });
     window.location.reload(true);
   } catch(error) {
-    console.log(error)
+    // console.log(error)
   }
 
 }
@@ -32,7 +32,7 @@ export default function RoomTable() {
             })
     }, [url])
 
-    console.log(row)
+    // console.log(row)
 
     return (
         <> 

@@ -2,11 +2,11 @@ import React from 'react'
 import Nav from './Nav'
 
 export default function NavBanner(props) {
-    console.log(props)
+    // console.log(props)
   return (
-    <div class="nav_banner">
+    <div className="nav_banner">
         <Nav />
-        <div class="nav_banner-text">
+        <div className="nav_banner-text">
             <h1>{props.title}</h1>
         </div>
     </div>

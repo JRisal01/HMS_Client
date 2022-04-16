@@ -10,7 +10,7 @@ export default function Dashboard() {
   return (
     <div className='dashboard'>
       <Nav />
-      <div class="admin-dashbord-container">
+      <div className="admin-dashbord-container">
         <SideNav />
         <Guest />
       </div>

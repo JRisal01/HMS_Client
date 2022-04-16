@@ -17,26 +17,26 @@ export default function RoomCard() {
             })  
     }, [url])
 
-    console.log(room)
+    // console.log(room)
 
   return (
       <>
    
         <div>
-            <section class="cards-wrapper">
+            <section className="cards-wrapper">
             {room?.map((items,i)=>(
-              <div class="card-grid-space">
-                <Link  to={`/room/${items._id}`} class="card" href="#" >
+              <div className="card-grid-space">
+                <Link  to={`/room/${items._id}`} className="card" href="#" >
                   <div>
                     <h1>{items.name + ` Room`}</h1>
                     {items.features?.map((items, i)=>(
                     <span>{items + ` || `}</span>
                     ))}
-                    <div class="price">{items.rate + ` NPR / NIGHT`}</div>
-                    <div class="tags">
-                      <div class="tag">{items.bedtype +  ` Bed`}</div>
+                    <div className="price">{items.rate + ` NPR / NIGHT`}</div>
+                    <div className="tags">
+                      <div className="tag">{items.bedtype +  ` Bed`}</div>
                     </div>
-                    <Link to={`/room/${items._id}`}><button type="button" class=" View">View More</button></Link>
+                    <Link to={`/room/${items._id}`}><button type="button" className=" View">View More</button></Link>
                   </div>
                 </Link>
               </div>

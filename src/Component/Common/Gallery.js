@@ -15,24 +15,24 @@ export default function RoomCard() {
             })  
     }, [url])
 
-    console.log(room)
+    // console.log(room)
 
   return (
       <>
    
         <div>
-            <section class="cards-wrapper">
+            <section className="cards-wrapper">
             {room?.map((items,i)=>(
-              <div class="card-grid-space">
-                <a class="card" href="#" style="--bg-img: url('https://thecodest.co/images/code-review.png')" >
+              <div className="card-grid-space">
+                <a className="card" href="#" style="--bg-img: url('https://thecodest.co/images/code-review.png')" >
                   <div>
                     <h1>{items.name + ` Room`}</h1>
                     {items.features?.map((items, i)=>(
                     <span>{items + ` || `}</span>
                     ))}
-                    <div class="price">{items.rate + ` NPR / NIGHT`}</div>
-                    <div class="tags">
-                      <div class="tag">{items.bedtype +  ` Bed`}</div>
+                    <div className="price">{items.rate + ` NPR / NIGHT`}</div>
+                    <div className="tags">
+                      <div className="tag">{items.bedtype +  ` Bed`}</div>
                     </div>
                   </div>
                 </a>

@@ -3,9 +3,9 @@ import React from 'react'
 export default function SideNav() {
   return (
     <>
-        <div class="admin-dashboard-nav">
+        <div className="admin-dashboard-nav">
             <ul>
-                <li class="admin-dashboard-nav-active">Dashboard</li>
+                <li className="admin-dashboard-nav-active">Dashboard</li>
                 <li>Guest list</li>
                 <li> Room List </li>
                 <li> Reviews </li>

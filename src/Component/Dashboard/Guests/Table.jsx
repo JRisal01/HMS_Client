@@ -37,14 +37,14 @@ export default function Table() {
     console.log(row)
 
   return (
-    <div class="admin-dashboard-table">
+    <div className="admin-dashboard-table">
 
         <div>
-            <h1 class="admin-dashboard-table-heading">Guest Details</h1>
+            <h1 className="admin-dashboard-table-heading">Guest Details</h1>
         </div>
 
         <table cellspacing="0">
-            <tr class="admin-dashboard-table-title">
+            <tr className="admin-dashboard-table-title">
                 <td>#</td>
                 <td>Name</td>
                 <td>Check In</td>
@@ -68,7 +68,7 @@ export default function Table() {
                     <td>{items.phoneNumber}</td>
                     <td>{items.roomType}</td>
                   
-                    <td><img onClick={(e) => {console.log('asdk')}} src="images/edit.svg" /> <img onClick={() => removeGuest(items._id)} src="images/del.svg" class="dashboard-table-action" /></td>
+                    <td><img onClick={(e) => {console.log('asdk')}} src="images/edit.svg" /> <img onClick={() => removeGuest(items._id)} src="images/del.svg" className="dashboard-table-action" /></td>
                 </tr>
                 ))}
 

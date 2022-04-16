@@ -45,39 +45,38 @@ export default function Form({props}) {
     const guestInfo = {name, email, phoneNumber, status, roomType, checkIn, checkOut};
 
     if(props == null){
-        console.log("dfasdas")
+        // console.log("dfasdas")
     }
     else{
-        // console.log(props)
-        console.log('fuck')
+        // console.log(props
     }
     
 
   return (
-    <div class="admin-dashboard-form-container">
+    <div className="admin-dashboard-form-container">
 
-        <div class="admin-dashboard-form">
+        <div className="admin-dashboard-form">
             <div>
-                <h1 class="admin-dashboard-form-title">Add Guest</h1>
+                <h1 className="admin-dashboard-form-title">Add Guest</h1>
             </div>
 
-            <div class="admin-dashboard-form-wrapper">
+            <div className="admin-dashboard-form-wrapper">
                 <label>Name</label>
                 <input type="text" value={name} onChange={(e)=>{setName(e.target.value)}}/>
             </div>
 
-            <div class="admin-dashboard-form-wrapper">
+            <div className="admin-dashboard-form-wrapper">
                 <label>Email</label>
                 <input type="email" value={email} onChange={(e)=>{setEmail(e.target.value)}} />
             </div>
 
-            <div class="admin-dashboard-form-wrapper">
+            <div className="admin-dashboard-form-wrapper">
                 <label> phoneNumber No. </label>
                 <input type='number' value={phoneNumber} onChange={(e)=>{setPhoneNumber(e.target.value)}} />
             </div>
 
-            <div class="admin-dashboard-status-check">
-                <div class="admin-dashboard-form-wrapper">
+            <div className="admin-dashboard-status-check">
+                <div className="admin-dashboard-form-wrapper">
                     <label>Status</label>
                     <select value={status} onChange={(e)=>{setStatus(e.target.value)}}>
                         <option>Paid</option>
@@ -86,7 +85,7 @@ export default function Form({props}) {
                     </select>
                 </div>
 
-                <div class="admin-dashboard-form-wrapper">
+                <div className="admin-dashboard-form-wrapper">
                     <label>Room type</label>
                     <select value={roomType} onChange={(e)=>{setRoomType(e.target.value)}}>
                         <option>Single Room</option>
@@ -98,19 +97,19 @@ export default function Form({props}) {
             </div>
 
 
-            <div class="admin-dashboard-status-check">
-                <div class="admin-dashboard-form-wrapper">
+            <div className="admin-dashboard-status-check">
+                <div className="admin-dashboard-form-wrapper">
                     <label>Check In</label>
                     <input type="date" value={checkIn} onChange={(e)=>{setCheckIn(e.target.value)}} />
                 </div>
 
-                <div class="admin-dashboard-form-wrapper">
+                <div className="admin-dashboard-form-wrapper">
                     <label>Check Out</label>
                     <input type="date" value={checkOut} onChange={(e)=>{setCheckOut(e.target.value)}} />
                 </div>
             </div>
 
-            <div class="admin-dashboard-btn">
+            <div className="admin-dashboard-btn">
                 <button onClick={() => saveDuest(guestInfo)}>Submit</button>
             </div>
         </div>

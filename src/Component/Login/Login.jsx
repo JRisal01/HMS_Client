@@ -31,8 +31,8 @@ export default function Login() {
 
   return (
     <>
-      <div class="container" id="container">
-        <div class="form-container sign-up-container">
+      <div className="container" id="container">
+        <div className="form-container sign-up-container">
           <form action="#">
             <h1>Create Account</h1>
             <span>use your email for registration</span>
@@ -43,7 +43,7 @@ export default function Login() {
             <button>Sign Up</button>
           </form>
         </div>
-        <div class="form-container sign-in-container">
+        <div className="form-container sign-in-container">
           <form action="#">
             <h1>Sign in</h1>
             <span>se your account</span>
@@ -54,17 +54,17 @@ export default function Login() {
             <button>Sign In</button>
           </form>
         </div>
-        <div class="overlay-container">
-          <div class="overlay">
-            <div class="overlay-panel overlay-left">
+        <div className="overlay-container">
+          <div className="overlay">
+            <div className="overlay-panel overlay-left">
               <h1>Welcome Back!</h1>
               <p>To keep connected with us please login with your personal info</p>
-              <button class="ghost" id="signIn" onClick={()=> signInButton()}>Sign In</button>
+              <button className="ghost" id="signIn" onClick={()=> signInButton()}>Sign In</button>
             </div>
-            <div class="overlay-panel overlay-right">
+            <div className="overlay-panel overlay-right">
               <h1>Hello, Friend!</h1>
               <p>Enter your personal details and start journey with us</p>
-              <button class="ghost" id="signUp" onClick={()=> signUpButton()}>Sign Up</button>
+              <button className="ghost" id="signUp" onClick={()=> signUpButton()}>Sign Up</button>
             </div>
           </div>
         </div>

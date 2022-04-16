@@ -20,18 +20,18 @@ export default function RoomDetail() {
         axios.get(url)
             .then ( response => {
                 setDetail(response.data);
-                console.log("response.data")
+                // console.log("response.data")
             })
     }, [url])
 
-    console.log(detail)
+    // console.log(detail)
 
 
   return (
       <>
         <RoomBanner title = {detail?.name}/>
         <RoomDetailCard features = {detail?.features}/>
-        <RoomBooking />
+        <RoomBooking id = {detail?.roomtype}/>
       </>
   )
 }

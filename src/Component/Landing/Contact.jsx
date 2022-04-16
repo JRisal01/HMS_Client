@@ -40,49 +40,49 @@ const Contact = () => {
         },
       });
     } catch(error) {
-      console.log(error)
+      // console.log(error)
     }
   
 }
 
     return (
-      <div class="contact-container">
-        <div class="content">
-          <div class="left-side">
-            <div class="address details">
-              <i class="fas fa-map-marker-alt"></i>
-              <div class="topic">Address</div>
-              <div class="text-one">Surkhet, NP12</div>
-              <div class="text-two">Birendranagar 06</div>
+      <div className="contact-container">
+        <div className="content">
+          <div className="left-side">
+            <div className="address details">
+              <i className="fas fa-map-marker-alt"></i>
+              <div className="topic">Address</div>
+              <div className="text-one">Surkhet, NP12</div>
+              <div className="text-two">Birendranagar 06</div>
             </div>
-            <div class="phone details">
-              <i class="fas fa-phone-alt"></i>
-              <div class="topic">Phone</div>
-              <div class="text-one">+0098 9893 5647</div>
-              <div class="text-two">+0096 3434 5678</div>
+            <div className="phone details">
+              <i className="fas fa-phone-alt"></i>
+              <div className="topic">Phone</div>
+              <div className="text-one">+0098 9893 5647</div>
+              <div className="text-two">+0096 3434 5678</div>
             </div>
-            <div class="email details">
-              <i class="fas fa-envelope"></i>
-              <div class="topic">Email</div>
-              <div class="text-one">codinglab@gmail.com</div>
-              <div class="text-two">info.codinglab@gmail.com</div>
+            <div className="email details">
+              <i className="fas fa-envelope"></i>
+              <div className="topic">Email</div>
+              <div className="text-one">codinglab@gmail.com</div>
+              <div className="text-two">info.codinglab@gmail.com</div>
             </div>
           </div>
-          <div class="right-side">
-            <div class="topic-text">Send us a message</div>
+          <div className="right-side">
+            <div className="topic-text">Send us a message</div>
             <p>If you have any work from me or any types of quries related to my tutorial, you can send me message from
               here. It's my pleasure to help you.</p>
             <form action="#">
-              <div class="input-box">
+              <div className="input-box">
                 <input type="text" placeholder="Enter your name" value={name} onChange={(e)=>{setName(e.target.value)}} />
               </div>
-              <div class="input-box">
+              <div className="input-box">
                 <input type="text" placeholder="Enter your email" value={email} onChange={(e)=>{setEmail(e.target.value)}}/>
               </div>
-              <div class="input-box message-box">
+              <div className="input-box message-box">
                 <textarea type="text" placeholder="Enter your Messages" value={messages} onChange={(e)=>{setMessages(e.target.value)}}/>
               </div>
-              <div class="button">
+              <div className="button">
                 <button type="button" value="Send Now" onClick={validateEmail}> Send Now </button>
               </div>
             </form>
